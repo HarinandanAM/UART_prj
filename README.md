@@ -25,12 +25,13 @@ sys_clk (50 MHz)
           ├── rx_fsm           (IDLE → DATA → PARITY → STOP, 16× oversampling)
           ├── pulse16          (single-cycle FIFO write-enable stretcher, 15-cycle hold)
           └── rx_fifo          (async CDC FIFO, depth 8, Gray-coded pointers)
-          
+
 ```
 
 The top-level `uart.v` wires the two paths together in loopback: received bytes from the RX FIFO are directly fed into the TX FIFO (`tx_fifo_in = rx_fifo_out`), so the device echoes every received byte.
 
 ---
+![UART Block Diagram](blockdgrm_fsm_uart.png)
 
 ## Clock Plan
 
