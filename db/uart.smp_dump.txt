@@ -1,0 +1,5 @@
+
+State Machine - |uart|tx_uart:tx_uart_uut|tx_fsm:uut|state
+Name state.SHIFT 
+state.IDLE 0 
+state.SHIFT 1 

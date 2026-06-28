@@ -1,0 +1,41 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "tx_out",
+					"strict" : false
+				},
+				{
+					"name" : "rx_fifo_empty",
+					"strict" : false
+				},
+				{
+					"name" : "tx_fifo_full",
+					"strict" : false
+				},
+				{
+					"name" : "rst",
+					"strict" : false
+				},
+				{
+					"name" : "sys_clk",
+					"strict" : false
+				},
+				{
+					"name" : "rx_ready",
+					"strict" : false
+				},
+				{
+					"name" : "tx_fifo_en",
+					"strict" : false
+				},
+				{
+					"name" : "rx_in",
+					"strict" : false
+				}
+			]
+		}
+	]
+}
